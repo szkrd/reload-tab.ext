@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Reload tab",
+  "version": "1.0.0",
+  "description": "Reload tab periodically Chrome extension.",
+  "icons": {
+    "128": "icon128.png"
+  },
+  "permissions": [
+    "tabs",
+    "alarms"
+  ],
+  "background": {
+    "scripts": [
+      "event-page.js"
+    ],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_title": "Reload this tab periodically.",
+    "default_icon": "icon128.png",
+    "default_popup": "popup.html"
+  }
+}

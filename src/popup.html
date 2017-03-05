@@ -1,0 +1,41 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Reload tab periodically</title>
+    <style type="text/css">
+      label { display: block; padding: 0 0 5px 0; white-space: nowrap; }
+      .info { color: gray; font-size: 0.7em; }
+      .controls { display: table; width: 100%; }
+      .row { display: table-row; }
+      .cell { display: table-cell; }
+      .cell:first-child { padding-right: 5px; }
+      input { width: 100%; }
+      input.off { opacity: 0.5; color: red; }
+      input.warning { color: orange; }
+      .line { height: 1em; line-height: 1em; padding-top: 3px; white-space: nowrap; }
+    </style>
+</head>
+<body>
+  <label for="timer">
+    Interval<br>
+    <!-- Chrome allows minutes only! and even those may be throttled -->
+    <span class="info">(minute, 0 disables, single cycle for all tabs)</span>
+  </label>
+  <div class="controls">
+    <div class="row">
+      <div class="cell">
+        <input type="number" min="0" max="999" id="timer" value="0" />
+      </div>
+      <div class="cell">
+        <input type="button" value="set" id="submit" />
+      </div>
+    </div>
+  </div>
+  <div class="line" id="reload-count-info">
+    Reload count (by extension): <b id="reload-count">0</b>
+  </div>
+  <div class="line" id="message"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
