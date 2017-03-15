@@ -1,6 +1,6 @@
 {
   "name": "@szkrd/reload-tab.ext",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Reload tab periodically Chrome extension.",
   "main": "index.js",
   "scripts": {
