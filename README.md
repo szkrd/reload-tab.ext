@@ -2,9 +2,11 @@
 
 Reload tab periodically Chromium extension. 
 
-* no spyware, no ads, no options page, no persistent background page
+* no spyware, no ads, no options page, only one persistent (background) page
 * minimum amount is __1 minute__ (api restriction)
 * timers are fired in sync (one main timer, to decrease the load)
+* if Chrome (Google) decides that background persistent pages and/or timers
+  are the devil, this extension will stop working of course
 
 ## installation
 

@@ -14,7 +14,7 @@
     "scripts": [
       "event-page.js"
     ],
-    "persistent": false
+    "persistent": true
   },
   "browser_action": {
     "default_title": "Reload this tab periodically.",

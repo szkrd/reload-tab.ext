@@ -89,7 +89,7 @@ function onTick () {
         if (realTab) {
           tab.reloaded++;
           chrome.tabs.reload(id, { bypassCache: NOCACHE }, () => {
-            updateBadge(realTab.id); // this will be wiped out at reload end, heck
+            updateBadge(id); // this will be wiped out at reload end, heck
           });
         } else {
           deregister(id);
